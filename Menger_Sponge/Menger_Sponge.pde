@@ -4,6 +4,8 @@ float angleY = 0;
 float prevY = 0;
 float rotateSpeedRate = 0.01;
 
+int step = 0;
+
 Box box;
 ArrayList<Box> sponge;
 
@@ -15,6 +17,8 @@ void setup(){
   sponge.add(box);
 }
 void mousePressed(){
+  if(step<5){
+    
   ArrayList<Box> next = new ArrayList<Box>();
   for(Box b: sponge)
   {
@@ -22,6 +26,8 @@ void mousePressed(){
     next.addAll(newBoxes);
   }
   sponge = next;
+  step++;
+  }
 }
 
 void draw() {

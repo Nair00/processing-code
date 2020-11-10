@@ -26,10 +26,10 @@ void keyPressed(){
     Circle c = new Circle(mouseX, mouseY, random(20, 150), 0);
     circles.add(c);
   }
-  if(key == 'w'){
-    Rectangle r = new Rectangle(random(0, width), random(0, height), random(20, 150), random(20, 150), 0);
-    rectangles.add(r);
-  }
+  //if(key == 'w'){
+  //  Rectangle r = new Rectangle(random(0, width), random(0, height), random(20, 150), random(20, 150), 0);
+  //  rectangles.add(r);
+  //}
   
   if(key == 's'){
     follow = !follow;
